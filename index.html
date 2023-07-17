@@ -97,18 +97,18 @@
     </form>
   </section>
 
-  <div class="project-introduction">
-    <div class="video-container">
-      <video controls>
-        <source src="videos/video1.mp4" type="video/mp4">
-        您的浏览器不支持播放视频。
-      </video>
+  <!-- 模态窗口 -->
+  <div id="modal-container" style="display: none;">
+    <div class="project-introduction">
+      <div class="video-container">
+        <video id="videoPlayer" controls></video>
+      </div>
+      <div class="description">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+      </div>
+      <span class="close-btn">&times;</span>
     </div>
-    <div class="description">
-      <h3>作品标题</h3>
-      <p>作品详细信息...</p>
-    </div>
-    <span class="close-btn">&times;</span>
   </div>
 
   <script src="scripts.js"></script>
